@@ -1,4 +1,4 @@
-#include "monty.hd"
+#include "monty.h"
 /**
  * montyMod - func computes mod of first two members
  * @head: param - stack head

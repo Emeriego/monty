@@ -6,7 +6,7 @@
 */
 void montyAddnode(stack_t **head, int n)
 {
-	stack_t *new_entry
+	stack_t *new_entry;
 	stack_t *ux;
 
 	ux = *head;

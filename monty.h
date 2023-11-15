@@ -59,7 +59,7 @@ void montyPush(stack_t **head, unsigned int number);
 void montyPall(stack_t **head, unsigned int number);
 void montyPint(stack_t **head, unsigned int number);
 int montyRun(char *content, stack_t **head, unsigned int counter, FILE *file);
-void free_stack(stack_t *head);
+void clear_me(stack_t *head);
 void montyPop(stack_t **head, unsigned int counter);
 void montySwap(stack_t **head, unsigned int counter);
 void montyAdd(stack_t **head, unsigned int counter);
@@ -73,7 +73,7 @@ void montyPstr(stack_t **head, unsigned int counter);
 void montyRotl(stack_t **head, unsigned int counter);
 void montyRotr(stack_t **head, __attribute__((unused)) unsigned int counter);
 void montyAddnode(stack_t **head, int n);
-void addqueue(stack_t **head, int n);
+void montyAddqueue(stack_t **head, int n);
 void montyQueue(stack_t **head, unsigned int counter);
 void montyStack(stack_t **head, unsigned int counter);
 

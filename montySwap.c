@@ -1,4 +1,4 @@
-#include "monty.hd"
+#include "monty.h"
 /**
  * montySwap - adds the top two elements of the stack.
  * @head: param - stack head

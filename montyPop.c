@@ -1,4 +1,4 @@
-#include "monty.my_hd"
+#include "monty.h"
 /**
  * montyPop - func prints the first element
  * @head: param - stack head

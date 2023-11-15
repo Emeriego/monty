@@ -1,6 +1,6 @@
 #include "monty.h"
 #include <stdio.h>
-bus_t stub = {0, NULL, NULL, NULL};
+stub_t stub = {0, NULL, NULL, NULL};
 /**
 * main - main monty code runner.
 * @argc: arguments count.
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 	p_file = fopen(argv[1], "r");
-	stub.file = p_file;
+	stub.p_file = p_file;
 	if (!p_file)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);

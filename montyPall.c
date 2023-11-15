@@ -1,4 +1,4 @@
-#include "monty.my_hd"
+#include "monty.h"
 /**
  * montyPall - prints the stack
  * @head: param - stack head

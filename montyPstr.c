@@ -1,4 +1,4 @@
-#include "monty.my_hd"
+#include "monty.h"
 /**
  * montyPstr - displays string starting at the top.
  * @head: paaram - stack head
