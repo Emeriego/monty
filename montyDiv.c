@@ -16,8 +16,8 @@ void montyDiv(stack_t **head, unsigned int counter)
 	if (length < 2)
 	{
 		fprintf(stderr, "L%d: can't div, stack too short\n", counter);
-		fclose(bus.p_file);
-		free(bus.cont);
+		fclose(stub.p_file);
+		free(stub.cont);
 		clear_me(*head);
 		exit(EXIT_FAILURE);
 	}
@@ -25,8 +25,8 @@ void montyDiv(stack_t **head, unsigned int counter)
 	if (hd->n == 0)
 	{
 		fprintf(stderr, "L%d: division by zero\n", counter);
-		fclose(bus.p_file);
-		free(bus.cont);
+		fclose(stub.p_file);
+		free(stub.cont);
 		clear_me(*head);
 		exit(EXIT_FAILURE);
 	}

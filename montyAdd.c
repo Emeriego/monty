@@ -16,8 +16,8 @@ void montyAdd(stack_t **head, unsigned int counter)
 	if (length < 2)
 	{
 		fprintf(stderr, "L%d: can't add, stack too short\n", counter);
-		fclose(bus.p_file);
-		free(bus.cont);
+		fclose(stub.p_file);
+		free(stub.cont);
 		clear_me(*head);
 		exit(EXIT_FAILURE);
 	}

@@ -8,5 +8,5 @@ void montyStack(stack_t **head, unsigned int counter)
 {
 	(void)head;
 	(void)counter;
-	bus.fin = 0;
+	stub.fin = 0;
 }

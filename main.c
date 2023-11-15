@@ -1,6 +1,6 @@
 #include "monty.h"
 #include <stdio.h>
-bus_t bus = {NULL, NULL, NULL, 0};
+bus_t stub = {0, NULL, NULL, NULL};
 /**
 * main - main monty code runner.
 * @argc: arguments count.
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 	p_file = fopen(argv[1], "r");
-	bus.file = p_file;
+	stub.file = p_file;
 	if (!p_file)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", argv[1]);
@@ -30,13 +30,13 @@ int main(int argc, char *argv[])
 	{
 		cont = NULL;
 		rdLine = getline(&cont, &my_sz, p_file);
-		bus.content = cont;
+		stub.cont = cont;
 		c++;
 		if (rdLine > 0)
 			montyRun(cont, &my_stack, c, p_file);
 		free(cont);
 	}
-	free_stack(my_stack);
+	clear_me(my_stack);
 	fclose(p_file);
 return (0);
 }

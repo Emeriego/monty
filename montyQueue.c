@@ -9,6 +9,6 @@ void montyQueue(stack_t **head, unsigned int counter)
 {
 	(void)head;
 	(void)counter;
-	bus.fin = 1;
+	stub.fin = 1;
 }
 
