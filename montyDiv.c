@@ -1,4 +1,4 @@
-#include "monty.hd"
+#include "monty.h"
 /**
  * montyDiv - func divides the first two elements.
  * @head: param - head
