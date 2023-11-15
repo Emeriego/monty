@@ -4,7 +4,7 @@
  * @head: param - stack head
  * @counter: param - line position
 */
-void f_mul(stack_t **head, unsigned int counter)
+void montyMul(stack_t **head, unsigned int counter)
 {
 	int l;
 	int result;
