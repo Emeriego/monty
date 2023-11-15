@@ -22,7 +22,7 @@ int montyRun(char *content, stack_t **stack, unsigned int counter, FILE *file)
 	if (operator && operator[0] == '#')
 		return (0);
 	stub.myarg = strtok(NULL, " \n\t");
-	while (tally[idx].opcode && op)
+	while (tally[idx].opcode && operator)
 	{
 		if (strcmp(op, tally[idx].opcode) == 0)
 		{	tally[idx].f(stack, counter);
