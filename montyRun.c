@@ -24,7 +24,7 @@ int montyRun(char *content, stack_t **stack, unsigned int counter, FILE *file)
 	stub.myarg = strtok(NULL, " \n\t");
 	while (tally[idx].opcode && operator)
 	{
-		if (strcmp(op, tally[idx].opcode) == 0)
+		if (strcmp(operator, tally[idx].opcode) == 0)
 		{	tally[idx].f(stack, counter);
 			return (0);
 		}
