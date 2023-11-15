@@ -24,26 +24,25 @@ typedef struct stack_s
 	struct stack_s *next;
 } stack_t;
 /**
- * struct bus_s - variables -args, file, line content
+ * struct stub_s - variables -args, file, line content
  * @arg: value
- * @file: pointer to monty file
- * @content: line content
+ * @p_file: pointer to monty file
+ * @cont: line content
  * @lifi: flag change stack <-> queue
  * Description: carries values through the program
  */
-typedef struct bus_s
+typedef struct stub_s
 {
-	char *arg;
-	FILE *file;
-	char *content;
-	int lifi;
-}  bus_t;
-extern bus_t bus;
+	int fin;
+	char *cont;
+	char *myarg;
+	FILE *p_file;
+}  stub_t;
+extern stub_t stub;
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
  * @f: function to handle the opcode
- *
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO Holberton project
  */

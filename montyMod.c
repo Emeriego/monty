@@ -1,21 +1,21 @@
 #include "monty.hd"
 /**
- * montyDiv - func divides the first two elements.
- * @head: param - head
- * @counter: line position
+ * montyMod - func computes mod of first two members
+ * @head: param - stack head
+ * @counter: param - line position
 */
-void montyDiv(stack_t **head, unsigned int counter)
+void montyMod(stack_t **head, unsigned int counter)
 {
 	stack_t *hd;
-	int length;
+	int l;
 	int result;
 
 	hd = *head;
-	for (length = 0; hd != NULL; length++)
+	for (l = 0; hd != NULL; l++)
 		hd = hd->next;
-	if (length < 2)
+	if (l < 2)
 	{
-		fprintf(stderr, "L%d: can't div, stack too short\n", counter);
+		fprintf(stderr, "L%d: can't mod, stack too short\n", counter);
 		fclose(bus.p_file);
 		free(bus.cont);
 		clear_me(*head);
@@ -30,7 +30,7 @@ void montyDiv(stack_t **head, unsigned int counter)
 		clear_me(*head);
 		exit(EXIT_FAILURE);
 	}
-	result = hd->next->n / hd->n;
+	result = hd->next->n % hd->n;
 	hd->next->n = result;
 	*head = hd->next;
 	free(hd);

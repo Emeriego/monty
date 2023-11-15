@@ -3,7 +3,6 @@
  * montyAdd - func sums the first two elements of stack.
  * @head: param head
  * @counter: line counter
- * Return: returns nothing
 */
 void montyAdd(stack_t **head, unsigned int counter)
 {
@@ -17,9 +16,9 @@ void montyAdd(stack_t **head, unsigned int counter)
 	if (length < 2)
 	{
 		fprintf(stderr, "L%d: can't add, stack too short\n", counter);
-		fclose(bus.file);
-		free(bus.content);
-		free_stack(*head);
+		fclose(bus.p_file);
+		free(bus.cont);
+		clear_me(*head);
 		exit(EXIT_FAILURE);
 	}
 	h = *head;
