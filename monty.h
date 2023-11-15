@@ -1,5 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
+#define _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -22,7 +23,6 @@ typedef struct stack_s
 	struct stack_s *prev;
 	struct stack_s *next;
 } stack_t;
-extern stack_t;
 /**
  * struct bus_s - variables -args, file, line content
  * @arg: value
