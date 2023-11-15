@@ -17,16 +17,19 @@ int montyRun(char *content, stack_t **stack, unsigned int counter, FILE *file)
 				{"pstr", montyPstr}, {"rotl", montyRotl}, {"rotr", montyRotr},
 				{"queue", montyQueue}, {"stack", montyStack}, {NULL, NULL}
 				};
-	unsigned int idx;
+	unsigned int idx = 0;
 	operator = strtok(content, " \n\t");
 	if (operator && operator[0] == '#')
 		return (0);
 	stub.myarg = strtok(NULL, " \n\t");
-	for (idx = 0; tally[idx].opcode && operator; idx++)
-		if (strcmp(operator, tally[idx].opcode) == 0)
+	while (tally[idx].opcode && op)
+	{
+		if (strcmp(op, tally[idx].opcode) == 0)
 		{	tally[idx].f(stack, counter);
 			return (0);
 		}
+		idx++;
+	}
 	if (operator && tally[idx].opcode == NULL)
 	{ fprintf(stderr, "L%d: unknown instruction %s\n", counter, operator);
 		fclose(file);
