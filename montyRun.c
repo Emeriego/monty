@@ -4,7 +4,8 @@
 * @stack: param head of linked list.
 * @counter: param - line position.
 * @file: param - ptr to opcode file.
-* @content: param - line content
+* @content: param - line content.
+* Return: returns 1.
 */
 int montyRun(char *content, stack_t **stack, unsigned int counter, FILE *file)
 {
@@ -18,6 +19,7 @@ int montyRun(char *content, stack_t **stack, unsigned int counter, FILE *file)
 				{"queue", montyQueue}, {"stack", montyStack}, {NULL, NULL}
 				};
 	unsigned int idx = 0;
+
 	operator = strtok(content, " \n\t");
 	if (operator && operator[0] == '#')
 		return (0);

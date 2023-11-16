@@ -5,7 +5,7 @@
 * main - main monty code runner.
 * @argc: arguments count.
 * @argv: argument vector - the file to be interpreted.
-* return: returns success.
+* Return: returns success.
 */
 int main(int argc, char *argv[])
 {
