@@ -1,6 +1,5 @@
 #include "monty.h"
 #include <stdio.h>
-stub_t stub = {0, NULL, NULL, NULL};
 /**
 * main - main monty code runner.
 * @argc: arguments count.
