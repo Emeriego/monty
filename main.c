@@ -1,4 +1,5 @@
 #include "monty.h"
+#include "vars.h"
 #include <stdio.h>
 /**
 * main - main monty code runner.
