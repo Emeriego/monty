@@ -12,7 +12,7 @@ void montyPall(stack_t **head, unsigned int counter)
 	my_hd = *head;
 	if (my_hd == NULL)
 		return;
-	while (my_hd == NULL)
+	while (my_hd != NULL)
 	{
 		printf("%d\n", my_hd->n);
 		my_hd = my_hd->next;
