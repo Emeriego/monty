@@ -8,11 +8,12 @@ stub_t stub = {0, NULL, NULL, NULL};
 */
 int main(int argc, char *argv[])
 {
+	ssize_t rdLine = 1;
+	unsigned int c = 0;
 	char *cont;
 	stack_t *my_stack = NULL;
 	FILE *p_file;
-	size_t my_sz = 0, rdLine = 1;
-	unsigned int c = 0;
+	size_t my_sz = 0;
 
 	if (argc != 2)
 	{
