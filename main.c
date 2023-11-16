@@ -1,10 +1,10 @@
 #include "monty.h"
 #include <stdio.h>
-stub_t stub = {0, NULL, NULL, NULL};
 /**
 * main - main monty code runner.
 * @argc: arguments count.
 * @argv: argument vector - the file to be interpreted.
+* return: returns success.
 */
 int main(int argc, char *argv[])
 {
