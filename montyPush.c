@@ -15,7 +15,7 @@ void montyPush(stack_t **head, unsigned int counter)
 		for (; stub.myarg[count] != '\0'; count++)
 		{
 			if (stub.myarg[count] > 57 || stub.myarg[count] < 48)
-				f = 1; 
+			f = 1; 
 		}
 		if (f == 1)
 		{
