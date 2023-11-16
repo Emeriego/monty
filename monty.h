@@ -39,7 +39,6 @@ typedef struct stub_s
 	FILE *p_file;
 }  stub_t;
 extern stub_t stub;
-stub_t stub = {0, NULL, NULL, NULL};
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
