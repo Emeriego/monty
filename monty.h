@@ -53,6 +53,7 @@ extern stub_t stub;
 
 char  *clean_line(char *content);
 
+void montyExch(int a, int b);
 
 void clear_me(stack_t *head);
 void montyPop(stack_t **head, unsigned int counter);
@@ -78,6 +79,7 @@ void montyAddnode(stack_t **head, int n);
 void montyAddqueue(stack_t **head, int n);
 void montyAdd(stack_t **head, unsigned int counter);
 void montyNop(stack_t **head, unsigned int counter);
+void montyBus(int a, int b);
 
 void montyQueue(stack_t **head, unsigned int counter);
 void montyStack(stack_t **head, unsigned int counter);

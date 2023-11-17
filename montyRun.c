@@ -21,6 +21,7 @@ int montyRun(char *content, stack_t **stack, unsigned int counter, FILE *file)
 	unsigned int idx;
 
 	operator = strtok(content, " \n\t");
+	montyBus(10, 7);
 	if (operator && operator[0] == '#')
 		return (0);
 	stub.myarg = strtok(NULL, " \n\t");
@@ -31,6 +32,7 @@ int montyRun(char *content, stack_t **stack, unsigned int counter, FILE *file)
 		}
 	if (operator && tally[idx].opcode == NULL)
 	{ fprintf(stderr, "L%d: unknown instruction %s\n", counter, operator);
+		montyBus(1, 8);
 		fclose(file);
 		free(content);
 		clear_me(*stack);
