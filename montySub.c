@@ -6,7 +6,7 @@
  */
 void montySub(stack_t **head, unsigned int counter)
 {
-	int nd;
+	int nd, a = 7, d = 1;
 	stack_t *curr;
 	int diff;
 
@@ -26,6 +26,7 @@ void montySub(stack_t **head, unsigned int counter)
 		exit(EXIT_FAILURE);
 	}
 	curr = *head;
+	montyBus(a, d);
 	diff = curr->next->n - curr->n;
 	curr->next->n = diff;
 	*head = curr->next;

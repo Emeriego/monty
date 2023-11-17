@@ -19,9 +19,10 @@ int montyRun(char *content, stack_t **stack, unsigned int counter, FILE *file)
 				{"queue", montyQueue}, {"stack", montyStack}, {NULL, NULL}
 				};
 	unsigned int idx;
+	int a = 7, d = 2;
 
 	operator = strtok(content, " \n\t");
-	montyBus(10, 7);
+	montyExch(a, d);
 	if (operator && operator[0] == '#')
 		return (0);
 	stub.myarg = strtok(NULL, " \n\t");

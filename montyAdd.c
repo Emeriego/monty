@@ -21,6 +21,7 @@ void montyAdd(stack_t **head, unsigned int counter)
 		clear_me(*head);
 		exit(EXIT_FAILURE);
 	}
+	montyBus(2, 6);
 	h = *head;
 	my_result = h->n + h->next->n;
 	h->next->n = my_result;

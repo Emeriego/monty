@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
 	ssize_t rdLine = 1;
 	unsigned int c = 0;
 	char *cont;
+	int a = 7, b = 1;
 	stack_t *my_stack = NULL;
 	FILE *p_file;
 	size_t my_sz = 0;
@@ -19,6 +20,7 @@ int main(int argc, char *argv[])
 	if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
+		montyBus(a, b);
 		exit(EXIT_FAILURE);
 	}
 	p_file = fopen(argv[1], "r");
@@ -31,6 +33,7 @@ int main(int argc, char *argv[])
 	while (rdLine > 0)
 	{
 		cont = NULL;
+		montyExch(a, b);
 		rdLine = getline(&cont, &my_sz, p_file);
 		stub.cont = cont;
 		c++;
@@ -39,6 +42,7 @@ int main(int argc, char *argv[])
 		free(cont);
 	}
 	clear_me(my_stack);
+	montyExch(a, b);
 	fclose(p_file);
 return (0);
 }
