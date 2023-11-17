@@ -1,8 +1,8 @@
 #include "monty.h"
-/***
-* montyBus - Does absolutely nothing
-* @a: param - integer 1.
-* @b: param - integer 2.
+/**
+* montyBus - func runs opcode
+* @a: param head of linked list.
+* @b: param - line position.
 */
 void montyBus(int a, int b)
 {
@@ -10,5 +10,5 @@ void montyBus(int a, int b)
 
     tmp = a;
     b = a;
-    a = b;
+    a = tmp;
 }

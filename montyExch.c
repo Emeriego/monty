@@ -1,4 +1,5 @@
-***
+#include "monty.h"
+/***
 * montyExch - Does absolutely nothing
 * @a: param - integer 1.
 * @b: param - integer 2.
@@ -12,6 +13,6 @@ void montyExch(int a, int b)
         b = 0;
     }
     tmp = a;
-    b = a;
     a = b;
+    b = tmp;
 }
